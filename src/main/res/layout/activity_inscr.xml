@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".inscrActivity"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:text="Creation de Compte"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="40px" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/nom"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="nom" />
+
+        <EditText
+            android:id="@+id/prenom"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="prenom" />
+
+        <EditText
+            android:id="@+id/mail"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Email" />
+
+        <EditText
+            android:id="@+id/Tel"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Tel"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="username" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="password"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="10dp"
+                android:background="@drawable/buttonstylepink"
+                android:onClick="OnLogin"
+                android:text="Se connecter"
+                android:textColor="#fff"
+
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttonstylepink"
+                android:text="Inscrire"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
